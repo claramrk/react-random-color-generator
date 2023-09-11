@@ -38,7 +38,7 @@ export default function App() {
             margin: '5px',
           }}
         >
-          Generate random color
+          Generate
         </button>
 
         <br />
