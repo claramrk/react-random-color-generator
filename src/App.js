@@ -19,7 +19,7 @@ export default function App() {
             color: 'white',
           }}
         >
-          {generatedColor}
+          Generated Color: {generatedColor}
         </p>
       </div>
 
