@@ -9,7 +9,7 @@ export default function App() {
       <h1>Random Color Generator</h1>
       <div
         style={{
-          backgroundColor: `${generatedColor}`,
+          backgroundColor: generatedColor,
           height: '100px',
           width: '100px',
         }}
