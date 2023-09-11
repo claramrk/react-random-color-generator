@@ -1,21 +1,12 @@
-import * as randomHex from 'random-hex';
 import randomColor from 'randomcolor';
 import { useState } from 'react';
 
 export default function App() {
-  const hexColorRandom = randomColor();
-  const hexColorUserInput = randomColor({
-    // luminosity: userInputLuminosity,
-    // hue: userInput,
-  });
-  const [generatedColor, setColor] = useState('');
-  console.log(hexColorRandom);
+  const [generatedColor, setGeneratedColor] = useState('');
 
   return (
     <>
       <h1>Random Color Generator</h1>
-      <br />
-
       <div
         style={{
           backgroundColor: `${generatedColor}`,
@@ -34,10 +25,17 @@ export default function App() {
 
       <br />
       <br />
+
       <div>
         <button
           onClick={() => {
-            setColor(randomColor());
+            setGeneratedColor(randomColor());
+          }}
+          style={{
+            width: '200px',
+            backgroundColor: 'maroon',
+            color: 'white',
+            margin: '5px',
           }}
         >
           Generate random color
@@ -68,6 +66,7 @@ export default function App() {
             margin: '5px',
           }}
         />
+
         <br />
         <br />
 
