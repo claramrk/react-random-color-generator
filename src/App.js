@@ -12,15 +12,10 @@ export default function App() {
           backgroundColor: generatedColor,
           height: '100px',
           width: '100px',
+          color: 'white',
         }}
       >
-        <p
-          style={{
-            color: 'white',
-          }}
-        >
-          Generated Color: {generatedColor}
-        </p>
+        Generated Color: {generatedColor}
       </div>
 
       <br />
